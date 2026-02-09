@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronRight, SquarePen, Trash } from "lucide-react";
+import { ChevronDown, ChevronRight, Trash } from "lucide-react";
 import { useEffect, useState } from "react";
 import sections from "./data/fica_data";
 
