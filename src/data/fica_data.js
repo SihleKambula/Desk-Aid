@@ -133,15 +133,29 @@ const sections = [
     checklistItems: [
       {
         id: "md-ind-ml-contact",
-        title: "ML as the contact person",
+        title: "Mike Laws as the contact person",
       },
       {
         id: "md-ind-ml-id",
-        title: "ML ID copy",
+        title: "Mike Laws ID copy",
       },
       {
         id: "md-ind-client-id",
         title: "Clients ID copy",
+      },
+      {
+        id: "md-ind-client-annexure",
+        title:
+          "Annexure A form for the client (with the related legal entity's details stated on the first section, Sanlam/Momentum) ",
+      },
+      {
+        id: "md-ind-cipc",
+        title:
+          "Sanlam/Momentum CIPC document (Do not request for the directors FICA)",
+      },
+      {
+        id: "md-ind-tax-exemption",
+        title: "DWT/Tax Exemption form (where applicable)",
       },
       {
         id: "md-ind-agreement",
