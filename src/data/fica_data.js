@@ -1,3 +1,19 @@
+/*
+The structure for creating each secttion
+
+{
+  id:'Section name",
+  title: "Legal entity type",
+  checklistItems:[
+    each check list object has and ID and title
+    {
+      id:"trust-resolution",
+      title:"Trust resolution letter"
+    }
+  ]
+}
+*/
+
 const sections = [
   {
     id: "unlisted-companies",
@@ -11,15 +27,24 @@ const sections = [
       {
         id: "company-resolution",
         title:
-          "Company resolution/Mandate ⇒ Authority to Act (If more than one director)",
+          "Company resolution/Mandate ⇒ Authority to Act (If there's more than one director)",
       },
       {
         id: "annexure-a",
-        title: "Annexure A forms ⇒ Listed Directors on the CIPC document",
+        title:
+          "Annexure A forms ⇒ Related parties found on (Resolution letter & CIPC)",
       },
       {
         id: "director-ids",
-        title: "Director's ID copies ⇒ Directors Verification",
+        title: "Related Parties ID copies ⇒ Verification",
+      },
+      {
+        id: "address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "address-company",
+        title: "Legal entity proof of address (QC)",
       },
     ],
   },
@@ -38,11 +63,19 @@ const sections = [
       },
       {
         id: "cc-annexure-a",
-        title: "Annexure A forms ⇒ Beneficial Owners",
+        title: "Annexure A forms ⇒ For all related parties",
       },
       {
         id: "cc-director-ids",
         title: "Director's ID copies ⇒ Directors Verification",
+      },
+      {
+        id: "cc-address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "cc-address-company",
+        title: "Legal entity proof of address (QC)",
       },
     ],
   },
@@ -71,6 +104,14 @@ const sections = [
       {
         id: "trust-ids",
         title: "Director's ID copies ⇒ Beneficiaries and Trustees Verification",
+      },
+      {
+        id: "t-address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "t-address-company",
+        title: "Trust proof of address (QC)",
       },
     ],
   },
@@ -172,6 +213,12 @@ const sections = [
       },
     ],
   },
+  // {
+  //   id: "retirement-pension",
+  //   title: "Retirement Pension Fund",
+  //   description:
+  //     "A retirement pension fund involves verifying the entity itself, its authority to operate, and the individuals acting on its behalf",
+  // },
   {
     id: "unincorporated-entities",
     title: "Unincorporated Entities",
@@ -192,6 +239,14 @@ const sections = [
       {
         id: "unincorp-ids",
         title: "ID copies",
+      },
+      {
+        id: "unincorp-address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "unincorp-address-company",
+        title: "Legal entity proof of address (QC)",
       },
     ],
   },
@@ -221,6 +276,14 @@ const sections = [
         id: "listed-ids",
         title: "Director's ID copies ⇒ Directors Verification",
       },
+      {
+        id: "listed-address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "listed-address-company",
+        title: "Legal entity proof of address (QC)",
+      },
     ],
   },
   {
@@ -243,6 +306,14 @@ const sections = [
       {
         id: "foreign-ids",
         title: "Director's ID copies ⇒ Directors Verification",
+      },
+      {
+        id: "foreign-address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "foreign-address-company",
+        title: "Legal entity proof of address (QC)",
       },
     ],
   },
@@ -274,6 +345,14 @@ const sections = [
         title:
           "Trustees & beneficiaries ID copies ⇒ Beneficiaries Verification",
       },
+      {
+        id: "will-address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "will-address-company",
+        title: "Legal entity proof of address (QC)",
+      },
     ],
   },
   {
@@ -296,6 +375,14 @@ const sections = [
       {
         id: "partnership-ids",
         title: "Director's ID copies ⇒ Partners Verification",
+      },
+      {
+        id: "ps-address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "ps-address-company",
+        title: "Legal entity proof of address (QC)",
       },
     ],
   },
@@ -356,6 +443,14 @@ const sections = [
         id: "church-ids",
         title: "ID copies",
       },
+      {
+        id: "church-address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "church-address-company",
+        title: "Legal entity proof of address (QC)",
+      },
     ],
   },
   {
@@ -379,6 +474,14 @@ const sections = [
       {
         id: "npo-ids",
         title: "ID copies",
+      },
+      {
+        id: "npo-address-related",
+        title: "Related parties proof of address (QC)",
+      },
+      {
+        id: "npo-address-company",
+        title: "Legal entity proof of address (QC)",
       },
     ],
   },

@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 import sections from "./data/fica_data";
 
 const App = () => {
+  // Manage state of the sections
   const [expandedSections, setExpandedSections] = useState({});
   const [checkedItem, setCheckedItem] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+  // local state for creating a personalized checklist
   const [entityName, setEntityName] = useState("");
   const [outstandingReq, setOutstandingReq] = useState("");
   const [outstandingReqs, setOutstandingReqs] = useState([]);
@@ -15,6 +17,7 @@ const App = () => {
     JSON.parse(localStorage.getItem("checklists")) || [],
   );
 
+  // Opening a modal
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
@@ -25,7 +28,7 @@ const App = () => {
     }));
   }
 
-  //saved personal checklist to local storage upon updating array
+  // load saved personal checklist to local storage upon updating array
   useEffect(() => {
     localStorage.setItem("checklists", JSON.stringify(personalChecklist));
   }, [personalChecklist]);
@@ -93,6 +96,10 @@ const App = () => {
                 </button>
 
                 {/* Section Content */}
+                {expandedSections[section.id] && section.description && (
+                  <div>{section.description}</div>
+                )}
+                {/* Check list section */}
                 {expandedSections[section.id] && section.checklistItems && (
                   <div className="px-5 pb-5 pt-2 text-gray-300 border-t border-gray-700">
                     <div className="space-y-3 pl-6">
