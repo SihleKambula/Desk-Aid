@@ -32,7 +32,7 @@ const sections = [
       {
         id: "annexure-a",
         title:
-          "Annexure A forms ⇒ Related parties found on (Resolution letter & CIPC)",
+          "Annexure A forms ⇒ Related parties found on (Resolution letter & CIPC) & at least 1 benefical owner",
       },
       {
         id: "director-ids",
@@ -63,7 +63,8 @@ const sections = [
       },
       {
         id: "cc-annexure-a",
-        title: "Annexure A forms ⇒ For all related parties",
+        title:
+          "Annexure A forms ⇒ For all related parties & at least 1 benefical owner",
       },
       {
         id: "cc-director-ids",
@@ -99,7 +100,7 @@ const sections = [
       {
         id: "trust-annexure-a",
         title:
-          "Annexure A forms ⇒ Beneficiaries, Trustees on the LOA and Resolution letter",
+          "Annexure A forms ⇒ Beneficiaries, Trustees on the LOA and Resolution letter & at least 1 benefical owner",
       },
       {
         id: "trust-ids",
@@ -135,7 +136,7 @@ const sections = [
       {
         id: "stl-trust-annexure",
         title:
-          "Annexure A forms ⇒ Beneficiaries, Trustees on the LOA and Resolution letter",
+          "Annexure A forms ⇒ Beneficiaries, Trustees on the LOA and Resolution letter & at least 1 benefical owner",
       },
       {
         id: "stl-trust-ids",
@@ -234,7 +235,8 @@ const sections = [
       },
       {
         id: "unincorp-annexure",
-        title: "Annexure A forms ⇒ Individuals stated on the legal document",
+        title:
+          "Annexure A forms ⇒ Individuals stated on the legal document & at least 1 benefical owner",
       },
       {
         id: "unincorp-ids",
@@ -270,7 +272,8 @@ const sections = [
       },
       {
         id: "listed-annexure",
-        title: "Annexure A forms ⇒ Listed Directors on the CIPC document",
+        title:
+          "Annexure A forms ⇒ Listed Directors on the CIPC document & at least 1 benefical owner",
       },
       {
         id: "listed-ids",
@@ -338,7 +341,7 @@ const sections = [
       {
         id: "will-annexure",
         title:
-          "Annexure A forms ⇒ Beneficiaries, Trustees on the LOA and Resolution letter",
+          "Annexure A forms ⇒ Beneficiaries, Trustees on the LOA and Resolution letter & at least 1 benefical owner",
       },
       {
         id: "will-ids",
@@ -417,7 +420,7 @@ const sections = [
       {
         id: "school-annexure",
         title:
-          "Annexure A forms ⇒ Individuals stated on the school letterhead/constitution or founding document",
+          "Annexure A forms ⇒ Individuals stated on the school letterhead/constitution or founding document & at least 1 benefical owner",
       },
     ],
   },
@@ -437,7 +440,7 @@ const sections = [
       {
         id: "church-annexure",
         title:
-          "Annexure A forms ⇒ Individuals stated on the constitutional documents",
+          "Annexure A forms ⇒ Individuals stated on the constitutional documents & at least 1 benefical owner",
       },
       {
         id: "church-ids",
@@ -469,7 +472,7 @@ const sections = [
       {
         id: "npo-annexure",
         title:
-          "Annexure A forms ⇒ Individuals stated on the resolution and Certificate",
+          "Annexure A forms ⇒ Individuals stated on the resolution and Certificate & at least 1 benefical owner",
       },
       {
         id: "npo-ids",
